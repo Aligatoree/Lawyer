@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Inter400;
+  font-display: swap;
+  src: url("../fonts/Inter400.woff2") format("woff2"), url("../fonts/Inter400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bitter600;
+  font-display: swap;
+  src: url("../fonts/Bitter600.woff2") format("woff2"), url("../fonts/Bitter600.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter500;
+  font-display: swap;
+  src: url("../fonts/Inter500.woff2") format("woff2"), url("../fonts/Inter500.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?o7wqpi");
+  src: url("../fonts/icomoon.eot?o7wqpi#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?o7wqpi") format("truetype"), url("../fonts/icomoon.woff?o7wqpi") format("woff"), url("../fonts/icomoon.svg?o7wqpi#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-card:before {
+  content: "\e900";
+}
+
+.icon-gift:before {
+  content: "\e901";
+}
+
+.icon-house:before {
+  content: "\e902";
+}
+
+.icon-key:before {
+  content: "\e903";
+}
+
+.icon-tag:before {
+  content: "\e904";
+}
+
+.icon-circle-right:before {
+  content: "\ea42";
+}
+
+.icon-circle-left:before {
+  content: "\ea44";
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  padding: 15px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #FFFFFF;
+}
+
+.header__title {
+  font-family: "Bitter600";
+  font-size: 48px;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__navigation button {
+  padding: 35px 30px 35px 30px;
+  font-family: "Inter400";
+  font-size: 24px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.header__phone {
+  padding: 35px 30px 35px 30px;
+  font-family: "Inter400";
+  font-size: 24px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.intro {
+  width: 100%;
+  height: 820px;
+  padding: 144px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  background: url("../img/background.png") 0 0/cover no-repeat;
+  color: #FFFFFF;
+}
+
+.intro__right {
+  margin-top: 56px;
+  width: 650px;
+}
+
+.intro__title {
+  font-family: "Bitter600";
+  font-size: 40px;
+}
+
+.intro__description {
+  font-family: "Inter400";
+  font-size: 24px;
+  line-height: 130%;
+  margin: 20px 0 20px 0;
+}
+
+.intro__button {
+  display: block;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  font-family: "Bitter600";
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
+}
+
+.work {
+  margin-top: 100px;
+  background-color: #FFFFFF;
+}
+
+.work__title {
+  text-align: center;
+  font-family: "Bitter600";
+  font-size: 40px;
+}
+
+.work .tab {
+  width: 100%;
+  margin-top: 60px;
+  background-color: #FFFFFF;
+}
+
+.work .tab__container {
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.work .tab__wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Inter500";
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.work .tab__wrapper .tab__item,
+.work .tab__wrapper input {
+  display: none;
+}
+
+.work .tab__wrapper .tab__item {
+  background-color: #E1E1E1;
+  width: 100%;
+  height: 556px;
+  max-width: 100%;
+  padding: 60px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.work .tab__wrapper input:checked + label {
+  background: url("../img/tag_light.svg") 0 -3px/cover no-repeat;
+  color: #875345;
+}
+
+.work .tab__wrapper input:hover + label {
+  background: url("../img/tag_dark.svg") 0 -3px/cover no-repeat;
+  color: #FFFFFF;
+}
+
+.work .tab__wrapper input:checked:hover + label {
+  background: url("../img/tag_light.svg") 0 -3px/cover no-repeat;
+  color: #875345;
+}
+
+.work .tab__wrapper input:checked + label + .tab__item {
+  display: block;
+}
+
+.work .tab__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  height: 80px;
+  background: url("../img/tag_brown.svg") 0 -3px/cover no-repeat;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) -2px 1px 3px;
+          box-shadow: rgba(0, 0, 0, 0.4) -2px 1px 3px;
+  line-height: 35px;
+  width: 270px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.work .tab__item .worklist {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 200px;
+}
+
+.work .tab__item .worklist__el {
+  max-width: 300px;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.work .tab__item .worklist__el::before {
+  display: block;
+  padding-bottom: 30px;
+  margin: 0;
+  font-size: 180px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
