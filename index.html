@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="An example of a one-page website for a lawyer"
+  />
+  <title>Адвокат</title>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico?" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+
+<body>
+  <header class="header">
+  <div class="header__wrapper wrapper">
+    <a href="tel:+79999999999" class="header__phone">+7 999 999 99 99</a>
+    <a class="header__title">Иванова Мария Александровна</a>
+    <input class="header__toggle" id="burger__menu" type="checkbox" />
+    <label class="header__burger" for="burger__menu"> </label>
+    <nav class="header__menu">
+      <ul class="header__navigation">
+        <li>
+          <a href="#services">Услуги</a>
+        </li>
+        <li>
+          <a href="#examples">Примеры</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <ul class="header__media">
+        <li>
+          <a href="#" class="header__link icon-skype"></svg></a>
+        </li>
+        <li>
+          <a href="#" class="header__link icon-telegram"></a>
+        </li>
+        <li>
+          <a href="#" class="header__link icon-viber"></a>
+        </li>
+        <li>
+          <a href="#" class="header__link icon-vk"></a>
+        </li>
+        <li>
+          <a href="#" class="header__link icon-whatsapp"></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__background"></div>
+  </div>
+</header>
+
+  <main>
+  <section class="intro">
+    <div class="intro__background intro__background_big"></div>
+    <div class="intro__wrapper wrapper">
+      <div class="intro__background intro__background_small"></div>
+      <img class="intro__photo" src="img/photo1.jpg" alt="photo" />
+      <div class="intro__container">
+        <div class="intro__info">
+          <h1 class="intro__title">Юридическая помощь</h1>
+          <p class="intro__description">
+            Предоставляю квалифицированные юридическию услуги в городе
+            Санкт-Петерубрг. Всегда готова прийти на помощь.
+          </p>
+          <button class="intro__button">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <ul class="features__list">
+      <li class="features__item">
+        <h3 class="features__title">
+          <span>Бесплатная</span>первая консультация
+        </h3>
+      </li>
+      <li class="features__item">
+        <h3 class="features__title"><span>22 года</span>в юриспруденции</h3>
+      </li>
+      <li class="features__item">
+        <h3 class="features__title">
+          <span>12 лет</span>адвокатской деятельности
+        </h3>
+      </li>
+    </ul>
+  </section>
+
+  <section class="work">
+    <div id="services" class="hook"></div>
+    <h2 class="work__title wrapper">Направления, по которым я работаю</h2>
+    <div class="work__tab tab">
+      <div class="tab__background"></div>
+      <div class="tab__container">
+        <div id="work" class="tab__wrapper">
+          <button id="switchTab" class="tab__switch"></button>
+
+          <input type="radio" name="tab" id="tab1" checked />
+          <label class="tab__label tab__label_start" for="tab1" nth="1"
+            >Гражданско-правовые</label
+          >
+          <div class="tab__item">
+            <ul class="tab__worklist worklist">
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp1.svg"
+                  alt="icon"
+                />
+                Защита прав потребителей
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp2.svg"
+                  alt="icon"
+                />
+                Взыскание задолженности
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp3.svg"
+                  alt="icon"
+                />
+                Возражение на судебный приказ
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp4.svg"
+                  alt="icon"
+                />
+                Споры по наследству, приватизация и др.
+              </li>
+            </ul>
+          </div>
+
+          <input type="radio" name="tab" id="tab2" />
+          <label class="tab__label" for="tab2" nth="2">Уголовные</label>
+          <div class="tab__item">
+            <ul class="tab__worklist worklist">
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_u1.svg"
+                  alt="icon"
+                />
+                Соблюдение законности при следственных действиях
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp1.svg"
+                  alt="icon"
+                />
+                Профессиональная защита в суде
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_u3.svg"
+                  alt="icon"
+                />
+                Участие в предварительном следствии
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp3.svg"
+                  alt="icon"
+                />
+                Обжалование приговора
+              </li>
+            </ul>
+          </div>
+
+          <input type="radio" name="tab" id="tab3" />
+          <label class="tab__label" for="tab3" nth="3">Семейные</label>
+          <div class="tab__item">
+            <ul class="tab__worklist worklist">
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_s1.svg"
+                  alt="icon"
+                />
+                Бракоразводный процесс
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_s2.svg"
+                  alt="icon"
+                />
+                Раздел имущества
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_s3.svg"
+                  alt="icon"
+                />
+                Определение места жительства детей
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_s4.svg"
+                  alt="icon"
+                />
+                Лишение родительских прав
+              </li>
+            </ul>
+          </div>
+
+          <input type="radio" name="tab" id="tab4" />
+          <label class="tab__label tab__label_previous" for="tab4" nth="4"
+            >Арбитраж</label
+          >
+          <div class="tab__item">
+            <ul class="tab__worklist worklist">
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp2.svg"
+                  alt="icon"
+                />
+                Взыскание по договору
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_ar2.svg"
+                  alt="icon"
+                />
+                Незаконное обогащение
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_gp1.svg"
+                  alt="icon"
+                />
+                Защита прав и интересов ООО и ИП
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_ar4.svg"
+                  alt="icon"
+                />
+                Взыскание неустойки
+              </li>
+            </ul>
+          </div>
+
+          <input type="radio" name="tab" id="tab5" />
+          <label class="tab__label tab__label_end" for="tab5" nth="5"
+            >Административные</label
+          >
+          <div class="tab__item">
+            <ul class="tab__worklist worklist">
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_a1.svg"
+                  alt="icon"
+                />
+                Миграционное законодательство
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_a2.svg"
+                  alt="icon"
+                />
+                Незаконные штрафы и налоги
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_a3.svg"
+                  alt="icon"
+                />
+                ДТП
+              </li>
+              <li class="worklist__el">
+                <img
+                  class="worklist__icon"
+                  src="img/icons/work_a4.svg"
+                  alt="icon"
+                />
+                Незаконный протокол об административном правонарушении
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="example">
+    <div id="examples" class="hook"></div>
+    <div class="example__background"></div>
+    <h2 class="example__title wrapper">Примеры из практики</h2>
+    <div class="example__container wrapper">
+      <ul class="example__wrapper swiper-wrapper">
+        <li class="example__item swiper-slide">
+          <h3 class="example__item_title">
+            О нарушенном праве владения, пользования и распоряжения жилым
+            помещением
+          </h3>
+          <p class="example__item_text">
+            В ходе судебного процесса полностью доказана наша позиция, исковые
+            требования удовлетворены. Суд обязал ответчика не чинить препятствия
+            в пользовании помещением, взысканы судебные расходы в пользу
+            заказчика. Дело рассматривалось в Красногвардейском районном суде
+            СПб № Х-ХХХХ.
+          </p>
+        </li>
+        <li class="example__item swiper-slide">
+          <h3 class="example__item_title">Взыскание неустойки с ТСЖ</h3>
+          <p class="example__item_text">
+            В ходе судебного процесса взыскана максимальная неустойка, штраф и
+            судебные расходы в пользу заказчика. Дело рассматривалось в
+            Красногвардейстком районном суде СПб № Х-ХХХХ.
+          </p>
+        </li>
+        <li class="example__item swiper-slide">
+          <h3 class="example__item_title">
+            О нарушенном праве владения, пользования и распоряжения жилым
+            помещением
+          </h3>
+          <p class="example__item_text">
+            В ходе судебного процесса полностью доказана наша позиция, исковые
+            требования удовлетворены. Суд обязал ответчика не чинить препятствия
+            в пользовании помещением, взысканы судебные расходы в пользу
+            заказчика. Дело рассматривалось в Красногвардейском районном суде
+            СПб № Х-ХХХХ.
+          </p>
+        </li>
+        <li class="example__item swiper-slide">
+          <h3 class="example__item_title">Взыскание неустойки с ТСЖ</h3>
+          <p class="example__item_text">
+            В ходе судебного процесса взыскана максимальная неустойка, штраф и
+            судебные расходы в пользу заказчика. Дело рассматривалось в
+            Красногвардейстком районном суде СПб № Х-ХХХХ.
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="feedback__background"></div>
+    <h2 class="feedback__title wrapper">Свяжитесь со мной</h2>
+    <div class="feedback__container wrapper">
+      <div class="feedback__wrapper">
+        <form action="#" id="form" class="feedback__form">
+          <input
+            id="name"
+            class="feedback__name _required _name"
+            name="name"
+            type="text"
+            placeholder="Имя"
+            required
+          />
+          <span class="feedback__name_span">*</span>
+          <input
+            id="phone"
+            class="feedback__phone _required _phone"
+            name="phone"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+            pattern="\(\d{3}\) \d{3}\-\d{4}"
+            required
+          />
+          <span class="feedback__phone_span">*</span>
+          <textarea
+            id="comment"
+            class="feedback__comment"
+            name="comment"
+            type="text"
+            placeholder="Комментарий"
+          ></textarea>
+          <p class="feedback__data">
+            Продолжая, вы соглашаетесь со сбором и обработкой персональных
+            данных.
+          </p>
+          <button class="feedback__button" type="submit">
+            Получить консультацию
+          </button>
+        </form>
+      </div>
+      <img class="feedback__photo" src="img/photo2.jpg" alt="photo" />
+    </div>
+  </section>
+
+  <section class="map">
+    <div id="contacts" class="hook"></div>
+    <div class="map__img"></div>
+    <div class="map__wrapper wrapper">
+      <div class="map__container">
+        <h2 class="map__title">Контакты</h2>
+        <ul class="map__list list">
+          <li>
+            <a href="#" class="list__element icon-map"
+              >г. Санкт-Петербруг, Московский пр., д. 328, этаж 9, офис 24</a
+            >
+          </li>
+          <li>
+            <a href="#" class="list__element icon-phone">+7 999 999 99 99</a>
+          </li>
+          <li>
+            <a href="#" class="list__element icon-mail">lawyer@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+  <div class="footer__container wrapper">
+    <ul class="footer__media">
+      <li>
+        <a href="#" class="footer__link icon-skype"></a>
+      </li>
+      <li>
+        <a href="#" class="footer__link icon-telegram"></a>
+      </li>
+      <li>
+        <a href="#" class="footer__link icon-viber"></a>
+      </li>
+      <li>
+        <a href="#" class="footer__link icon-vk"></a>
+      </li>
+      <li>
+        <a href="#" class="footer__link icon-whatsapp"></a>
+      </li>
+    </ul>
+    <div class="footer__info">
+      <p class="footer__info_name">Иванова Мария Александровна</p>
+      <p class="footer__info_doc">
+        Адвокатское удостоверение №ХХХ от 15.01.2006
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
